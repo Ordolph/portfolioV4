@@ -1,0 +1,17 @@
+backend:
+  name: github
+  branch: master
+  repo: Ordolph/portfolioV4
+
+media_folder: src/images
+public_folder: /img
+
+collections:
+  - name: "project"
+    label: "Project"
+    folder: "src/projects"
+    creat: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Project", name: "title", widget: "string"}
+    - {label: "Content", name: "body", widget: "markdown"}

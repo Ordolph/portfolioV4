@@ -5,9 +5,9 @@ image: '/Arduino/'
 date: '2019-02-16'
 ---
 
-##About
+## About
 
 Arduino thermoter hydrometer with 16x2 LCD display. Coded for Arduino Mega 2560.
 
-#####Created by
+##### Created by
 Austin Randolph
