@@ -6,7 +6,6 @@ import styled from 'styled-components';
 const PORTFOLIO_QUERY = graphql`
   query PortfolioQuery {
     allMarkdownRemark(
-      limit: 5
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

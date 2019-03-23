@@ -1,7 +1,7 @@
 ---
 title: 'Arduino Thermometer/Hydrometer with LCD Display'
 path: '/arduinotherm'
-image: '/arduinotherm/'
+image: '/Arduino/'
 date: '2019-02-16'
 ---
 

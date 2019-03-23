@@ -1,13 +1,13 @@
 ---
-title: 'Giftastic'
-path: '/giftastic'
-image: '/Gifs/'
-date: '2018-08-24'
+title: 'Train Scheduler'
+path: '/trains'
+image: '/Trains/'
+date: '2018-11-03'
 ---
 
 ##About
 
-Simple gif searching app using the Giphy api, jQuery, and Bootstrap. Users can add new searches, or click existing ones to display gifs that match the search term.
+Simple CRUD app using Bootstrap, jQuery, and Firebase. Users can view the current trains, when they will next arrive, and their destination. Users can also add new trains, with their destination, when the first train leaves, and how frequently the next one arrives. 
 
 #####Created by
 Austin Randolph
