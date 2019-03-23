@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Layout from './layout';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
 
 export default class projectLayout extends Component {
   render() {
@@ -12,7 +13,9 @@ export default class projectLayout extends Component {
     return (
       <Layout location={location}>
         <h1>{markdownRemark.frontmatter.title}</h1>
-        <Img fluid={file.childImageSharp.fluid} alt="project screenshot" />
+        {file && (
+          <Img fluid={file.childImageSharp.fluid} alt="project screenshot" />
+        )}
         <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
       </Layout>
     );
@@ -39,3 +42,10 @@ export const query = graphql`
     }
   }
 `;
+
+projectLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+projectLayout.defaultProps = {
+  data: { file: { chiildImageSharp: { fluid: '' } } },
+};
